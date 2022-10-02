@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  var isim="kaan";
+        //  var yas=25;
+        //  var gozrengi=mavi;
+
+        //  var insan1={
+        //     isim:"fatih",
+        //     yas:29,
+        //     gozrengi:"ela"
+
+        //  };
+
+        //  function insan(isim,yas,gozrengi){
+        //     this.isim=isim;
+        //     this.yas=yas;
+        //     this.gozrengi=gozrengi;
+        //  }
+        //  var i1=new insan ("ahmet",29,"kahverengi");
+        //  document.write(i1.isim+" "+i1.yas+" "+i1.gozrengi)
+
+
+
+        function insan(isim,yas,gozrengi){
+            this.isim=isim;
+            this.yas=yas;
+            this.gozrengi=gozrengi;
+            this.isimdegistir=function(yeniisim){
+                this.isim=yeniisim
+            }
+            this.dogumyili=dogumyilihesapla;
+         }
+
+        function dogumyilihesapla(){
+            return 2019-this.yas;
+        }
+         var i1=new insan ("ahmet",29,"kahverengi");
+         document.write(i1.isim+" "+i1.yas+" "+i1.gozrengi+" "+i1.dogumyili());
+         i1.isimdegistir("kaan");
+    </script>
+</body>
+</html>

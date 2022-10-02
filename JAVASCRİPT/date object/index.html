@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var tarih=new Date();
+        // document.write(tarih)
+
+
+
+        // var tarih=new Date(0);
+        // document.write(tarih)
+
+
+        // var tarih=new Date("march 5,2014 15:45:14");
+        // document.write(tarih)
+
+        // var tarih=new Date(94,0,25,23,48,14,45);
+        // document.write(tarih)
+
+
+        // var tarih=new Date();
+        // document.write(tarih.getFullYear())
+
+        // var tarih=new Date();
+        // document.write(tarih.getMonth()+1)
+
+        // var tarih=new Date();
+        // document.write(tarih.getDay())
+
+        // var tarih=new Date();
+        // document.write(tarih.getHours())
+
+
+        function saatigoster(){
+        var tarih=new Date();
+        var saat=tarih.getHours();
+        var dakika=tarih.getMinutes();
+        var saniye=tarih.getSeconds();
+        document.body.innerHTML=saat+":"+dakika+":"+saniye;
+        }
+        
+        setInterval(saatigoster,1000);
+
+       
+    </script>
+</body>
+</html>
